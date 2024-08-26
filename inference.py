@@ -53,7 +53,7 @@ def run():
     model = VisionTransformerForSegmentation(**vit_args)
 
     # Load the saved state dictionary
-    checkpoint = torch.load(f"{INPUT_PATH}/yes_dwi_4inputs_1.pth",map_location ='cpu')
+    checkpoint = torch.load(f"{INPUT_PATH}/yes_dwi_4inputs_1.pth")
     # Load model and optimizer state dictionaries
     model.load_state_dict(checkpoint['model'])
     model.eval()
