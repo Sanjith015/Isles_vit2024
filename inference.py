@@ -37,7 +37,7 @@ def run():
     
     # Load image files and preprocess
     non_contrast_ct = load_nii(f"{INPUT_PATH}/images/non-contrast-ct", is_ncct=True)
-    ct_angiography = load_nii(f"{INPUT_PATH}/images/preprocessed-ct-angiography", is_cta=True)
+    ct_angiography = load_nii(f"{INPUT_PATH}/images/preprocessed-CT-angiography", is_cta=True)
     perfusion_ct = load_nii(f"{INPUT_PATH}/images/perfusion-ct", is_ctp=True)
     mtt = load_nii(f"{INPUT_PATH}/images/preprocessed-mtt-map", is_t=True)
     tmax = load_nii(f"{INPUT_PATH}/images/preprocessed-tmax-map", is_t=True)
